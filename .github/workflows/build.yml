@@ -44,7 +44,6 @@ jobs:
 
       - name: Deploy to OCI Compute VM
         run: |
-          docker --context remote compose -f deploy/docker-compose.yml down 
           docker --context remote compose -f deploy/docker-compose.yml pull 
           docker --context remote compose -f deploy/docker-compose.yml up --detach
           docker --context remote compose -f deploy/docker-compose.yml ps
