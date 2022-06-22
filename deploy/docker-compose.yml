@@ -1,6 +1,6 @@
 version: '3'
 services: 
-  app:  
+  deployer-demo-app:  
     image: sin.ocir.io/axywzncrs54j/deployer-demo:latest
     ports:
       - 8000:80
